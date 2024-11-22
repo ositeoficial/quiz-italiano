@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2em;
+    color: #171717;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(130, 5, 14, 1), rgba(206, 8, 20, 1), rgba(206, 8, 20, 1));
+    padding: 16px;
+}
+
+/* Container */
+
+.container {
+    max-width: 480px;
+    min-height: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: white;
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 12px;
+}
+
+.navbar__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__item__logo img {
+    max-height: 48px;
+    width: auto;
+}
+
+.navbar__item__back {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__item__back p {
+    font-size: 24px;
+    align-self: center;
+}
+
+.navbar__item__page p {
+    font-size: 18px;
+}
+
+.navbar__item__back:hover {
+    color: #CE0814;
+    box-shadow: 0 3px 6px rgba(206, 8, 20, 0.2);
+}
+
+/* Progress Bar */
+
+.navbar__progress__full {
+    margin-top: 6px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #E2E2E2;
+}
+
+.navbar__progress__completed {
+    height: 12px;
+    border-radius: 6px;
+    background-color: #CE0814;
+    margin-top: -12px;
+}
+
+#myprogressBar {
+    width: 0;
+}
+
+/* Form */
+
+#surveyFormCompletato {
+    margin-top: 2em;
+}
+
+#surveyFormCompletato label {
+    font-size: 18px !important;
+    color: #707070;
+}
+
+#surveyFormCompletato form {
+    margin-top: 0;
+}
+
+#surveyFormCompletato form input[type="text"] {
+    border: solid #cfcfcf 1px;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+#surveyFormCompletato form input[data-name="telefonoe164"] {
+    width: 100% !important;
+    padding: 1.5em 50px;
+}
+
+#surveyFormCompletato form input[name="phone"],
+#surveyFormCompletato form label[for="phone"] {
+    display: none !important;
+}
+
+.iti--allow-dropdown {
+    width: 100%;
+}
+
+#surveyFormCompletato form button#_form_343_submit,
+#surveyFormCompletato form button#_form_346_submit {
+    background-color: #2da800 !important;
+    border-radius: 10px !important;
+    width: 100%;
+    font-size: 1.6em;
+}
+
+#surveyFormCompletato .policyprivacy {
+    text-align: center;
+}
+
+/* Titolo */
+
+.sv-container-modern__title {
+    text-align: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+h5 span,
+#form_headline_form {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1c1c1c;
+    text-align: center !important;
+    margin-bottom: 20px;
+}
+
+/* Radio */
+
+.sv-checkbox,
+.sv-radio {
+    font-size: 21px;
+    color: #B7B7B7;
+    margin-bottom: 24px !important;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
+    max-width: 98%;
+}
+
+.sv-checkbox__svg {
+    border-style: none !important;
+}
+
+.sv-checkbox--allowhover:hover .sv-checkbox__svg {
+    border: none !important;
+    background-color: transparent !important;
+    fill: white;
+}
+
+.sv-checkbox--checked .sv-checkbox__svg {
+    border: none;
+    background-color: transparent !important;
+    fill: white;
+}
+
+
+.sv-checkbox,
+.sv-radio {
+    font-size: 16px;
+}
+
+.sv-checkbox label,
+.sv-radio label {
+    text-align: center;
+}
+
+.sv-checkbox--checked,
+.sv-radio--checked {
+    border: 3px solid #2da800;
+
+}
+
+.sv-checkbox.sv-checkbox--checked span,
+.sv-radio.sv-radio--checked span {
+    /* color: #ffffff; */
+}
+
+.sv-checkbox b
+.sv-radio b {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 12px;
+    color: #838383;
+}
+
+label.sv-selectbase__label {
+    margin-left: 0;
+}
+
+label .sv-radio__decorator {
+    display: none;
+}
+
+.sv-radio span {
+    color: #2b2b2b;
+}
+
+
+/* Content */
+
+.sv-root-modern .sv-question__title--answer {
+    background-color: rgba(255, 255, 255) !important;
+}
+
+.sv-root-modern .sv-container-modern {
+    color: rgb(59, 74, 100);
+}
+
+.sv-title {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.sv-title h2 {
+    margin-bottom: 50px;
+}
+
+.sv-title button {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+    padding: 0.5em;
+    background-color: #2da800;
+    color: #ffffff;
+}
+
+/* HTML */
+.sv-html {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.sv-html span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.sv-html h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.7em;
+    padding-bottom: 0.5em;
+}
+
+.sv-html button {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0.5em;
+    background-color: #2da800;
+    color: #ffffff;
+}
+
+.sv-html .sv-quote {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.sv-html img {
+    max-width: 60%;
+    display: block;
+    margin: 10px auto 10px auto;
+
+}
+
+.sv-string-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.sv-title h3 .sv-string-viewer {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.sv-title h5 .sv-string-viewer {
+    color: #636363;
+    font-size: 19px;
+}
+
+.survey-icon {
+    font-size: 2em;
+    margin-right: 15px;
+}
+
+
+/* Quiz completato */
+
+.final-message p {
+    font-size: 0.6em;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.sv-root-modern .sv-completedpage {
+    background-color: rgb(255, 255, 255) !important;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+.sv-body__footer.sv-footer.sv-action-bar {
+    margin-top: 0 !important;
+}
+
+.sv-btn.sv-footer__prev-btn,
+.sv-btn.sv-footer__next-btn,
+.sv-body .sv-footer.sv-action-bar {
+    display: none;
+}
+
+.sv-btn.sv-action-bar-item, .sv-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 1.214em;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2em !important;
+    font-weight: bold;
+    /* outline: none; */
+    padding: 0.5em 2.786em 0.6em;
+    text-align: center;
+    margin: 0 auto !important;
+    float: none !important;
+    display: block;
+}
+
+.sv-btn--navigation {
+    background-color: #1bb31a !important;
+}
+
+
+.footer {
+    margin-top: 100px;
+    color: #949494;
+    font-size: 12px;
+}
+
+.privacy, .copy {
+    text-align: center;
+}
+
+.privacy a {
+    color: #cccccc;
+    padding: 10px 0 10px 0;
+    display: inline-block;
+}
+
+.sv-root-modern ::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+    background-color: #9f9f9f;
+}
+
+.sv-root-modern ::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.sv-root-modern ::-webkit-scrollbar-thumb {
+    background: #ffffff !important;
+}
+
+.sv-checkbox__decorator {
+    display: none !important;
+}
+
+.quote-disc {
+    font-size: 0.6em !important;
+    padding-top: 1em;
+}
+
+.sv-title h3 .sv-string-viewer{
+    text-align: center !important;
+}
+
